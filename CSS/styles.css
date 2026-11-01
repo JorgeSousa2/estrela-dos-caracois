@@ -310,6 +310,62 @@ h2 {
 
 
 
+
+.informacoes {
+    padding: 80px 20px;
+    background-color: #f8f5f0;
+    text-align: center;
+}
+
+.informacoes h2 {
+    font-size: 36px;
+    color: #301608;
+    margin-bottom: 40px;
+}
+
+.informacoes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(48, 22, 8, 0.15);
+}
+
+.info-card h3 {
+    color: #301608;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #301608;
     color: white;
@@ -329,6 +385,11 @@ footer{
     .cards{
         grid-template-columns: 1fr 1fr;
     }
+    
+    .informacoes-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 @media (max-width: 768px) {
     .cards{
@@ -367,6 +428,19 @@ footer{
     #contactos{
         padding: 40px 20px;
     }
+    
+    .informacoes {
+        padding: 50px 20px;
+    }
+
+    .informacoes h2 {
+        font-size: 28px;
+    }
+
+    .informacoes-container {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
